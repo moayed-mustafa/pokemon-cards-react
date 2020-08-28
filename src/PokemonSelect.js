@@ -12,6 +12,7 @@ function PokemonSelect({ add, pokemon = pokemonList }) {
 
   return (
     <div>
+
       <select onChange={handleChange}>
 
         {pokemon.map((p, idx) => (

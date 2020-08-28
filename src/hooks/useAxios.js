@@ -3,13 +3,13 @@ import axios from 'axios'
 import uuid from "uuid";
 
 
-const useAxios = (url, initial_state, name='') => {
+const useAxios = (url, initial_state,) => {
     // create a state
 
     const [state, setState] = useState(initial_state)
 
     // create a function to change the state
-    const fetchDataAndChangeState = async () => {
+    const fetchDataAndChangeState = async (name="") => {
         // fetch the data
         try {
             const res = await axios.get(`${url}/${name}`)
